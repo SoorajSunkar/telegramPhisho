@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title></title>
+  <link rel="stylesheet" href="style/control.css">
+</head>
+
+<body>
+
+  <div class="container">
+    <h1>Please pick a method</h1>
+
+    <button class="btns" id="first-btn">Custome method</button>
+    <button class="btns" id="second-btn">Default method</button>
+  </div>
+
+  <form action="/upload" method="post" enctype="multipart/form-data">
+    <input type="file" id="file" name="user" / required>
+    <input type="text" name="country" id="" placeholder="Country name" required>
+
+    <input type="submit" value="Done">
+  </form>
+  <div class="header">Use Default</div>
+
+  <form action="/upload" method="post" class="default">
+    <p>
+      check the button for default setting
+    </p>
+    <div class="default-box">
+      <label for="default">Default</label>
+      <input type="radio" name="default" id="default" required>
+    </div>
+    <input type="text" name="country2" id="" placeholder="Country name" required>
+    <input type="submit" value="Done">
+  </form>
+</body>
+
+<script src="js/control.js"></script>
+
+</html>
